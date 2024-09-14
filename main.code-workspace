@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "path": "src/backend",
+    },
+    {
+      "path": "src/frontend",
+    },
+    {
+      "path": "infra"
+    },
+    {
+      "path": ".",
+      "name": "root",
+    },
+  ],
+  "settings": {
+    "files.exclude": {
+      "src": true,
+      "infra": true,
+      ".next": true,
+      ".open-next": true,
+      "cdk.out": true,
+    },
+    "makefile.extensionOutputFolder": "./.vscode",
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": []
+  }
+}
