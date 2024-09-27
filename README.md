@@ -23,15 +23,24 @@ This is a template for a fullstack webapp using AWS/CDK/Go Backend/NextJS Fronte
       5. Click `Save changes`
 
 # Getting Started
-1. Clone the repository
-2. Update the config file in `infra/common/config.go` with your desired values
-3. Begin development
-   1. Add your api code in `src/backend/api`
-   2. Add your frontend code in `src/frontend`
-4. Run `make deploy` to deploy the application CICD. (After this step, ever push to the main branch will trigger a deployment)
-   1. (One time only) Confirm the github connection on AWS Codepipeline for this pipeline
-      1. Visit [Connections Page](https://us-east-1.console.aws.amazon.com/codesuite/settings/connections)
-      2. Click the connection marked as pending
-      3. Click Update Pending
-      4. Login to github and authorize the connection
-5. Iterate and Run `make deploy-dev` to deploy just the application stack (no cicd pipeline) to a dev env for testing
+1. Download template
+   1. `git clone git@github.com:amirhajimirsadeghi/fullstack-webapp-template.git <your-app-name>`
+   2. `cd <your-app-name>`
+   3. `git remote remove origin`
+2. Setup remote repository
+   1. `git remote add origin <your-repo-url>`
+4. Make changes
+   1. `code main.code-workspace`
+   2. Update the config file in `infra/common/config.go` with your desired values
+   3. Begin development
+      1. Add your api code in `src/backend/api`
+      2. Add your frontend code in `src/frontend`
+   4. Run `make deploy` to deploy the application CICD. (After this step, ever push to the main branch will trigger a deployment)
+      1. (One time only) Confirm the github connection on AWS Codepipeline for this pipeline
+         1. Visit [Connections Page](https://us-east-1.console.aws.amazon.com/codesuite/settings/connections)
+         2. Click the connection marked as pending
+         3. Click Update Pending
+         4. Login to github and authorize the connection
+   5. Iterate and Run `make deploy-dev` to deploy just the application stack (no cicd pipeline) to a dev env for testing
+5. Push to main
+   1. `git push origin main`

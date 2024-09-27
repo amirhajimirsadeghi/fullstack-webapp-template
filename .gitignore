@@ -20,3 +20,5 @@ cdk.out
 
 bin
 src/frontend/.open-next
+
+.vscode

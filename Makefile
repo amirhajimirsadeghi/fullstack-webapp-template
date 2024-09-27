@@ -4,10 +4,10 @@ prepare-backend:
 prepare-frontend:
 	cd src/frontend && npm i
 
-deploy-dev: prepare-backend prepare-frontend
+deploy-app: prepare-backend prepare-frontend
 	export DEVELOPMENT=true && cd infra && cdk synth --quiet && cdk deploy --all
 
-deploy: prepare-backend prepare-frontend
+deploy-pipeline: prepare-backend prepare-frontend
 	cd infra && cdk synth --quiet && cdk deploy --all
 
 clean:
