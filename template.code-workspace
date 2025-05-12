@@ -1,0 +1,36 @@
+{
+  "folders": [
+    {
+      "path": "cloud/common",
+      "name": "cloud/common",
+    },
+    {
+      "path": "cloud/app",
+      "name": "cloud/app",
+    },
+    {
+      "path": "cloud/infra",
+      "name": "cloud/infra",
+    },
+    {
+      "path": "client/web-app",
+      "name": "client/web-app",
+    },
+    {
+      "path": ".",
+      "name": "root",
+    },
+  ],
+  "settings": {
+    "files.exclude": {
+      "cloud": true,
+      "client": true,
+      ".vscode": true,
+      "**/node_modules": true,
+    }
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": []
+  }
+}
